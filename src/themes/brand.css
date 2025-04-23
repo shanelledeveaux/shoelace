@@ -1,0 +1,139 @@
+:root,
+:host,
+.sl-theme-brand {
+  /* Brand Colors */
+  --core-color-blue-100: hsl(210, 100%, 97%);
+  --core-color-blue-200: hsl(210, 100%, 90%);
+  --core-color-blue-300: hsl(210, 100%, 80%);
+  --core-color-blue-400: hsl(210, 100%, 65%);
+  --core-color-blue-500: hsl(210, 100%, 50%);
+  --core-color-blue-600: hsl(210, 100%, 40%);
+  --core-color-blue-700: hsl(210, 100%, 30%);
+  --core-color-blue-800: hsl(210, 100%, 22%);
+  --core-color-blue-900: hsl(210, 100%, 15%);
+
+  --core-color-red-100: hsl(350, 90%, 96%);
+  --core-color-red-200: hsl(350, 85%, 88%);
+  --core-color-red-300: hsl(350, 80%, 75%);
+  --core-color-red-400: hsl(350, 80%, 60%);
+  --core-color-red-500: hsl(350, 80%, 50%);
+  --core-color-red-600: hsl(350, 80%, 40%);
+  --core-color-red-700: hsl(350, 80%, 30%);
+  --core-color-red-800: hsl(350, 80%, 22%);
+  --core-color-red-900: hsl(350, 80%, 15%);
+
+  /* Neutral Grays */
+  --core-color-gray-50: hsl(210, 16%, 98%);
+  --core-color-gray-300: hsl(210, 16%, 90%);
+  --core-color-gray-500: hsl(210, 9%, 50%);
+  --core-color-gray-700: hsl(210, 10%, 31%);
+  --core-color-gray-900: hsl(210, 11%, 15%);
+
+  /* Accent + Utility */
+  --core-color-white: hsl(0, 0%, 100%);
+  --core-color-black: hsl(0, 0%, 0%);
+  --core-color-success: hsl(134, 61%, 41%);
+  --core-color-warning: hsl(45, 100%, 51%);
+  --core-color-error: hsl(354, 70%, 53%);
+
+  /* Spacing */
+  --core-spacing-0: 0;
+  --core-spacing-1: 0.25rem; /* 4px */
+  --core-spacing-2: 0.5rem; /* 8px */
+  --core-spacing-3: 0.75rem; /* 12px */
+  --core-spacing-4: 1rem; /* 16px */
+  --core-spacing-5: 1.5rem; /* 24px */
+  --core-spacing-6: 2rem; /* 32px */
+  --core-spacing-8: 3rem; /* 48px */
+
+  /* Typography */
+  --core-font-family-sans: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --core-font-family-mono: Menlo, Consolas, monospace;
+
+  --core-font-size-xs: 0.75rem; /* 12px */
+  --core-font-size-sm: 0.875rem; /* 14px */
+  --core-font-size-md: 1rem; /* 16px */
+  --core-font-size-lg: 1.25rem; /* 20px */
+  --core-font-size-xl: 1.5rem; /* 24px */
+
+  --core-font-weight-regular: 400;
+  --core-font-weight-medium: 500;
+  --core-font-weight-bold: 700;
+
+  --core-line-height-tight: 1.2;
+  --core-line-height-normal: 1.5;
+  --core-line-height-loose: 1.75;
+
+  /* Border Radius */
+  --core-radius-none: 0;
+  --core-radius-sm: 0.125rem; /* 2px */
+  --core-radius-md: 0.25rem; /* 4px */
+  --core-radius-lg: 0.5rem; /* 8px */
+  --core-radius-circle: 50%;
+
+  /* Elevation */
+  --core-shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --core-shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+  --core-shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --core-shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
+
+  /* Semantic */
+
+  /* Text */
+  --color-text-primary: var(--core-color-gray-900);
+  --color-text-secondary: var(--core-color-gray-700);
+  --color-text-muted: var(--core-color-gray-500);
+  --color-text-on-primary: var(--core-color-white);
+  --color-text-error: var(--core-color-red-700);
+
+  /* Backgrounds */
+  --color-background: var(--core-color-white);
+  --color-surface: var(--core-color-gray-50);
+  --color-background-muted: var(--core-color-gray-100);
+  --color-background-inverse: var(--core-color-gray-900);
+
+  /* Borders */
+  --color-border-default: var(--core-color-gray-500);
+  --color-border-muted: var(--core-color-gray-200);
+  --color-border-strong: var(--core-color-gray-700);
+
+  /* Brand */
+  --color-brand-primary: var(--core-color-blue-700);
+  --color-brand-primary-hover: var(--core-color-blue-800);
+  --color-brand-primary-active: var(--core-color-blue-800);
+  --color-brand-subtle: var(--core-color-blue-100);
+
+  /* Contextual */
+
+  /* Default */
+  /* REST */
+  --btn-default-border: var(--color-border-default);
+  --btn-default-text: var(--color-text-muted);
+  --btn-default-bg: transparent;
+
+  /* HOVER */
+  --btn-default-border-hover: var(--color-brand-primary);
+  --btn-default-text-hover: var(--color-brand-primary);
+  --btn-default-bg-hover: transparent;
+
+  /* ACTIVE */
+  --btn-default-border-active: var(--color-brand-primary-active);
+  --btn-default-text-active: var(--color-brand-primary-active);
+  --btn-default-bg-active: transparent;
+
+  /* Primary */
+  /* REST */
+  --btn-primary-border: var(--color-brand-primary);
+  --btn-primary-text: var(--color-text-on-primary);
+  --btn-primary-bg: var(--color-brand-primary);
+
+  /* HOVER */
+  --btn-primary-border-hover: var(--color-brand-primary-hover);
+  --btn-primary-text-hover: var(--color-text-on-primary);
+  --btn-primary-bg-hover: var(--color-brand-primary-hover);
+
+  /* ACTIVE */
+  --btn-primary-border-active: var(--color-brand-primary-active);
+  --btn-primary-text-active: var(--color-text-on-primary);
+  --btn-primary-bg-active: var(--color-brand-primary-active);
+}

@@ -1,6 +1,7 @@
 import { css } from 'lit';
 
 export default css`
+  .sl-theme-brand,
   :host {
     display: inline-block;
     position: relative;
@@ -76,40 +77,40 @@ export default css`
 
   /* Default */
   .button--standard.button--default {
-    background-color: var(--sl-color-neutral-0);
-    border-color: var(--sl-input-border-color);
-    color: var(--sl-color-neutral-700);
+    background-color: var(--btn-default-bg);
+    border-color: var(--btn-default-border);
+    color: var(--btn-default-text);
   }
 
   .button--standard.button--default:hover:not(.button--disabled) {
-    background-color: var(--sl-color-primary-50);
-    border-color: var(--sl-color-primary-300);
-    color: var(--sl-color-primary-700);
+    background-color: var(--btn-default-bg-hover);
+    border-color: var(--btn-default-border-hover);
+    color: var(--btn-default-text-hover);
   }
 
   .button--standard.button--default:active:not(.button--disabled) {
-    background-color: var(--sl-color-primary-100);
-    border-color: var(--sl-color-primary-400);
-    color: var(--sl-color-primary-700);
+    background-color: var(--btn-default-bg-active);
+    border-color: var(--btn-default-border-active);
+    color: var(--btn-default-text-active);
   }
 
   /* Primary */
   .button--standard.button--primary {
-    background-color: var(--sl-color-primary-600);
-    border-color: var(--sl-color-primary-600);
-    color: var(--sl-color-neutral-0);
+    background-color: var(--btn-primary-bg);
+    border-color: var(--btn-primary-border);
+    color: var(--btn-primary-text);
   }
 
   .button--standard.button--primary:hover:not(.button--disabled) {
-    background-color: var(--sl-color-primary-500);
-    border-color: var(--sl-color-primary-500);
-    color: var(--sl-color-neutral-0);
+    background-color: var(--btn-primary-bg-hover);
+    border-color: var(--btn-primary-bg-hover);
+    color: var(--btn-primary-text-hover);
   }
 
   .button--standard.button--primary:active:not(.button--disabled) {
-    background-color: var(--sl-color-primary-600);
-    border-color: var(--sl-color-primary-600);
-    color: var(--sl-color-neutral-0);
+    background-color: var(--btn-primary-bg-active);
+    border-color: var(--btn-primary-border-active);
+    color: var(--btn-primary-text-active);
   }
 
   /* Success */
